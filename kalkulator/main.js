@@ -2,15 +2,15 @@
 const btn = document.querySelector('button.result');
 
 const wynik = () => {
-    const value1 = document.getElementById('v1');
+const value1 = document.getElementById('v1');
 const value2 = document.getElementById('v2');
     let myOperator;
     let result;
-if(typeof value1.value === 'string' && typeof value2.value === 'string' || typeof value1.value === 'string' || typeof value2.value === 'string') {
-    alert("Musisz podać wartości LICZBOWE!")
-    value1.value ='';
-    value2.value ='';
-}
+// if(typeof value1.value === 'string' && typeof value2.value === 'string' || typeof value1.value === 'string' || typeof value2.value === 'string') {
+//     alert("Musisz podać wartości LICZBOWE!")
+//     value1.value ='';
+//     value2.value ='';
+// }
 //pobranie operatorów
 const operators = document.getElementsByName('operator');
 
@@ -20,21 +20,23 @@ if(operators[i].checked){
     
     switch(operators[i].value) {
         case "+":
-            result = value1 + value2;
+            result = value1.value + value2.value;
             break;
             case "-":
-                result = value1 - value2;
+                result = value1.value - value2.value;
                 break;
                 case "*":
-                result = value1 * value2;
+                result = value1.value * value2.value;
                 break;
                 case "/":
-                    result = value1 / value2;
+                    result = value1.value / value2.value;
                     break;
 
     }
 }
 }
 console.log(result)
-document.querySelector("div.result").innerHTML = result}
+document.querySelector("div.result").innerHTML = result
+value1.value = '';
+value2.value = '';}
 btn.addEventListener('click', wynik);
