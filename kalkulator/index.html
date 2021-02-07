@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="calc">
+        <div class="value1">
+            <input type="number" id="v1" placeholder="Podaj liczbę">
+        </div>
+        <div class="checkbox">
+            <input name="operator" type="radio" value="+">+<input name="operator" type="radio" value="-">-<input name="operator" type="radio" value="*">*<input name="operator" type="radio" value="/">/
+        </div>
+        <div class="value2">
+            <input type="number" id="v2" placeholder="Podaj liczbę">
+        </div>
+        <button class="result">=</button>
+    </section>
+    <div class="text">Wynik działania to:</div>
+    <div class="result"></div>
+    <script src="main.js"></script>
+</body>
+</html>

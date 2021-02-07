@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    max-height: 100vh;
+}
+
+section.calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #555;
+    height: 400px;
+    width: 300px;
+    border: 3px solid white;
+}
+
+div.value1 {
+    width: 80%;
+}
+
+#v1 {
+    height: 50px;
+    width: 100%;
+}
+
+div.checkbox {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+div.checkbox input {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+    margin-right: 7px;
+}
+
+div.value2 {
+    width: 80%;
+}
+
+#v2 {
+    height: 50px;
+    width: 100%;
+}
+
+button {
+    height: 50px;
+    width: 80%;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+div.text {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+div.result {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
